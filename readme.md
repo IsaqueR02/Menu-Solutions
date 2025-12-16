@@ -1,8 +1,8 @@
-# 💻 JavaScript Functions & Loops Showcase
+# 💻 JavaScript Condições
 
-Este projeto é uma aplicação web simples (HTML, CSS e JavaScript) desenvolvida para demonstrar a aplicação prática de funções JavaScript e estruturas de controle de fluxo.
+Este projeto é uma aplicação web simples (HTML, CSS e JavaScript) desenvolvida para demonstrar a aplicação prática de funções JavaScript e estruturas de condições.
 
-A interface apresenta uma lista de atividades interativas que, ao serem clicadas, executam funções JavaScript que se comunicam com o usuário através de prompt() e exibem os resultados em um terminal simulado na própria página (além do console do navegador via console.log()).
+A interface apresenta uma lista de atividades interativas que, ao serem clicadas, executam funções JavaScript que se comunicam com o usuário através de prompt() e exibem os resultados no console do navegador via console.log().
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -12,12 +12,10 @@ A interface apresenta uma lista de atividades interativas que, ao serem clicadas
 
 ## ✨ Principais Tópicos Demonstrados
 
-- Controle de Fluxo: Utilização prática de for, while e do...while para diferentes cenários de repetição.
+- Estrutura Condições: Utilização prática de if, if else e switch case para diferentes cenários.
 
 - Funções JavaScript: Modularização do código.
 
 - Interação com o Usuário: Captura de dados via prompt().
-
-- Manipulação do DOM: Exibição dinâmica de resultados em um terminal customizado na página.
 
 - Operadores Lógicos e Aritméticos (e.g., %, ===, +, -, *).
