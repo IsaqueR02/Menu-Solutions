@@ -53,3 +53,16 @@ function exercicio1() {
                 console.log(`O número é zero.`);
             }
 }
+function exercicio2() {
+    console.log('Executando Exercício 2: Verificar maioridade');
+
+    const idade = parseInt(prompt("2. Digite sua idade:"));
+
+    if (isNaN(idade) || idade < 0) {
+        console.log("Erro: Idade inválida. Por favor, digite uma idade válida.");
+    } else if (idade >= 18) {
+        console.log("Você é maior de idade.");
+    } else {
+        console.log("Você é menor de idade.");
+    }
+}
