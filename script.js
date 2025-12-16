@@ -146,3 +146,40 @@ function exercicio6() {
         }
         
 }
+
+function exercicio7() {
+    console.log('Executando Exercício 7');
+    alert("Calculadora simples");
+    const a = prompt("Digite o primeiro número:");
+    const b = prompt("Digite o segundo número:");
+    const operacao = prompt("Digite a operação (+, -, *, /):");
+
+    if (isNaN(parseFloat(a)) || isNaN(parseFloat(b))) {
+        console.log("Erro: Entrada inválida. Por favor, digite números válidos.");
+        return;
+    }
+    switch (operacao) {
+        case "+":
+            resultado = a + b;
+            console.log(`O resultado de ${a} + ${b} é: ${resultado}`);
+            break;
+        case "-":
+            resultado = a - b;
+            console.log(`O resultado de ${a} - ${b} é: ${resultado}`);
+            break;
+        case "*":
+            resultado = a * b;
+            console.log(`O resultado de ${a} x ${b} é: ${resultado}`);
+            break;
+        case "/":
+            resultado = a / b;
+            console.log(`O resultado de ${a} / ${b} é: ${resultado}`);
+            if (b === 0) {
+                console.log("Erro: Divisão por zero não é permitida.");
+            }
+            break;
+        default:
+            console.log(`Operação inválida: ${operacao}. Por favor, use +, -, * ou /.`);
+            break;
+        }
+}
