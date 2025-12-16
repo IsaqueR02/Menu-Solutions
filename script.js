@@ -99,3 +99,21 @@ function exercicio4() {
             console.log(`Os dois números são iguais (${num1}).`);
         }
 }
+function exercicio5() {
+    console.log('Executando Exercício 5');
+    alert("Classificar nota");
+
+    const input = prompt("Digite a nota de 0-10:");
+    const nota = parseFloat(input);
+        if (isNaN(nota) || nota < 0 || nota > 10) {
+            console.log("Erro: Nota inválida. Por favor, digite uma nota entre 0 e 10.");
+            return;
+        } else if (nota > 7) {
+            console.log(`Nota ${nota}: Nota alta`);
+        } else if (nota <= 7 && nota >= 5) {
+            console.log(`Nota ${nota}: Nota média`);
+
+        } else {
+            console.log(`Nota ${nota}: Nota baixa`);
+        }
+}
