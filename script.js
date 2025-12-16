@@ -183,3 +183,64 @@ function exercicio7() {
             break;
         }
 }
+function exercicio8() {
+    console.log('Executando Exercício 8');
+    alert("Dia da semana");
+    const input = prompt("Digite o dia de hj:");
+    const dia = input.toLowerCase();
+    const diaAtual = new Date().toLocaleDateString('pt-BR', { weekday: 'long' }).toLowerCase();
+        switch (diaAtual) {
+            case "segunda":
+                console.log("Hoje é Segunda-feira.");
+                break;
+            case "terça":
+                console.log("Hoje é Terça-feira.");
+                break;
+            case "quarta":
+                console.log("Hoje é Quarta-feira.");
+                break;
+            case "quinta":
+                console.log("Hoje é Quinta-feira.");
+                break;
+            case "sexta":
+                console.log("Hoje é Sexta-feira.");
+                break;
+            case "sábado":
+                console.log("Hoje é Sábado.");
+                break;
+            case "domingo":
+                console.log("Hoje é Domingo.");
+                break;
+            default:
+                console.log("Dia inválido.");
+                break;
+        }
+    dia === diaAtual ? console.log(`Você acertou! Hoje é ${diaAtual}.`) : console.log(`Você errou. Hoje é ${diaAtual}, não ${dia}.`);
+}
+function exercicio9() {
+    console.log('Executando Exercício 9');
+    alert("Verificar múltiplos");
+    const val1 = parseInt(prompt("Digite o primeiro valor:"));
+    const val2 = parseInt(prompt("Digite o segundo valor:"));
+        if (val1 % val2 === 0) {
+            console.log(`${val1} é múltiplo de ${val2}.`);
+        } else {
+            console.log(`${val1} não é múltiplo de ${val2}.`);
+        }
+}
+function exercicio10() {
+    console.log('Executando Exercício 10');
+    alert("Sistema de login simples");
+        const username = prompt("Digite seu nome de usuário:");
+        const password = prompt("Digite sua senha:");
+        
+        const validUsername = "usuario";
+        const validPassword = "senha123";
+
+        if (username === validUsername && password === validPassword) {
+            console.log("Login bem-sucedido! Seja bem-vindo(a).");
+        } else {
+            console.log("Usuário ou senha incorretos.");
+        }
+        
+}
