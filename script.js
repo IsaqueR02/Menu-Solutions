@@ -117,3 +117,32 @@ function exercicio5() {
             console.log(`Nota ${nota}: Nota baixa`);
         }
 }
+function exercicio6() {
+    console.log('Executando Exercício 6');
+    alert("Calculadora de IMC");
+    const inputPeso = prompt("Digite seu peso em kg:");
+    const inputAltura = prompt("Digite sua altura em metros:");
+    
+    const peso = parseFloat(inputPeso);
+    const altura = parseFloat(inputAltura);
+
+    if (isNaN(peso) || isNaN(altura) || altura <= 0 || peso <= 0) {
+        console.log("Erro: Valores inválidos. O peso e a altura devem ser números positivos.");
+        return;
+    }
+        const imc = peso / (altura * altura);
+        const imcFormatado = imc.toFixed(2);
+        alert(`Seu peso é ${peso} kg e sua altura é ${altura} m.`);
+        console.log(`Seu IMC é: ${imc}`);
+        
+        if (imcFormatado < 18.5) {
+            console.log("Abaixo do peso, coma mais!");
+        } else if (imcFormatado >= 18.5 && imcFormatado < 24.9) {
+            console.log("Peso normal, parabéns! Continue assim.");
+        } else if (imcFormatado >= 25 && imcFormatado < 29.9) {
+            console.log("Sobrepeso, necessita de uma dieta, faz exercícios?!");
+        } else {
+            console.log("Obesidade, cuidado com isso! Mude seus hábitos!");
+        }
+        
+}
