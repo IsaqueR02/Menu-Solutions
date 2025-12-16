@@ -66,3 +66,36 @@ function exercicio2() {
         console.log("Você é menor de idade.");
     }
 }
+function exercicio3() {
+    console.log('Executando Exercício 3');
+    const input = prompt("3. Digite um número inteiro para verificar se é par ou ímpar:");
+    const number = parseInt(input);
+    
+        alert("Verificando se o número é par ou ímpar");
+        if (isNaN(number)) {
+            console.log("Erro: Entrada inválida. Por favor, digite um número inteiro.");
+        } else if (number % 2 === 0) {
+            console.log(`O número ${number} é par.`);
+        } else {
+            console.log(`O número ${number} é ímpar.`);
+        }
+}
+function exercicio4() {
+    console.log('Executando Exercício 4');
+
+    alert("Comparar dois números");
+        const input1 = prompt("Digite o primeiro número:");
+        const input2 = prompt("Digite o segundo número:");
+        const num1 = parseFloat(input1);
+        const num2 = parseFloat(input2);
+        if (isNaN(num1) || isNaN(num2)) {
+            console.log("Erro: Entrada inválida. Por favor, digite números válidos.");
+            return;
+        } else if (num1 > num2) {
+            console.log(`O primeiro número ${num1} é maior que o segundo ${num2}.`);
+        } else if (num1 < num2) {
+            console.log(`O segundo número ${num2} é maior que o primeiro ${num1}.`);
+        } else {
+            console.log(`Os dois números são iguais (${num1}).`);
+        }
+}
